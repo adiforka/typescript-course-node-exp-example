@@ -1,0 +1,24 @@
+{
+  "name": "tsc-node-express",
+  "version": "1.0.0",
+  "description": "umm",
+  "main": "app.js",
+  "repository": "https://github.com/adiforka/typescript-course-node-exp-example",
+  "author": "adi forkasiewicz <adiforka@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon ./dist/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.16",
+    "@types/uuid": "^8.3.0",
+    "nodemon": "^2.0.6"
+  }
+}

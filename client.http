@@ -1,0 +1,42 @@
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+    "text": "Pull up your undies, y'all"
+}
+
+###
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+    "text": "Go suck a dick"
+}
+
+###
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+    "text": "Break a leg"
+}
+
+###
+GET http://localhost:3000/todos
+Accept: "application/json"
+
+### remember to use actual id from a prior POST request
+GET http://localhost:3000/todos/8712b64f-fd6c-4129-8562fa092350eae
+
+### remember to use an id from a get
+PATCH http://localhost:3000/todos/edacf9ee-0e46-43cf-81fa-88b1de6c1
+Content-Type: application/json
+
+{
+  "text": "No longer naughty"
+}
+
+### remember to use an id from a get
+DELETE http://localhost:3000/todos/a82b3931-d655-4c2qwe5724455
+Accept: application/json
+
