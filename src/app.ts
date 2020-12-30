@@ -13,7 +13,6 @@ app.use(json())
 app.use('/todos', todoRoutes)
 
 // error handling here
-
 const requestHandler: ErrorRequestHandler = (err, _req, res, _next) => {
     res.status(500).json({ message: err.message })
 }
